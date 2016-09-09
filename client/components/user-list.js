@@ -11,9 +11,9 @@ const Users = [
 ]
 
 const UserList = () => {
-	const RenderUsers = Users.map(function(user){
-		return <UserDetail user={user} />
-	})
+	const RenderUsers = Users.map(user => 
+		<UserDetail key={user.name} user={user} />
+	);
 	return (
 		<ul>
 			{RenderUsers}
