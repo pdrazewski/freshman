@@ -3,7 +3,7 @@ import React from 'react';
 const UserDetail = (props) => {
 
 	return (
-			<li>{props.user.name}</li>
+			<li>{props.user.title}</li>
 	)
 }
 
